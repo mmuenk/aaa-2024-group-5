@@ -1,0 +1,91 @@
+,Address,Category,website,Latitude,Longitude,Within_Chicago
+0,"10000 W Balmoral Ave, Chicago, IL 60666, United States","International airport,Airport",flychicago.com,41.9802588,-87.9089858,True
+1,"5700 S Cicero Ave, Chicago, IL 60638, United States","International airport,Airport",flychicago.com,41.7867759,-87.7521884,True
+2,"2 Airport Cir, Rockford, IL 61109, United States","International airport,Airport",flyrfd.com,42.2018417,-89.09581899999999,False
+3,"1020 Plant Rd, Wheeling, IL 60090, United States",Regional airport,chiexec.com,42.1161287,-87.9016055,False
+4,"2700 International Dr, West Chicago, IL 60185, United States","Regional airport,Airport",dupageairport.com,41.9067614,-88.25490789999999,False
+5,"4477 Progress Dr, South Bend, IN 46628, United States","International airport,Airport",flysbn.com,41.700602,-86.31210209999999,False
+6,"6001 Airport Rd, Gary, IN 46406, United States","International airport,Airport",flygyy.com,41.6177392,-87.408428,False
+7,"905 W Irving Park Rd, Schaumburg, IL 60193, United States",Airport,villageofschaumburg.com,41.9908508,-88.1023632,False
+8,"Unnamed Road, Chicago, IL 60605, United States",Airport,,41.8600681,-87.6100629,True
+9,"22763 S Center Rd, Frankfort, IL 60423, United States",Airport,,41.4774778,-87.840087,False
+0,"225 S Canal St, Chicago, IL 60606, United States",Train station,amtrak.com,41.8786897,-87.640311,True
+1,"47 W Polk St Ste M11, Chicago, IL 60605, United States",Historical landmark,,41.8719766,-87.6292263,True
+2,"500 W Madison St, Chicago, IL 60661, United States",Train station,metrarail.com,41.8831389,-87.6404919,True
+3,"151 Michigan Ave, Chicago, IL 60602, United States",Train station,metrarail.com,41.8843882,-87.6246974,True
+4,"225 S Canal St, Chicago, IL 60661, United States","Transportation service,Train yard",chicagounionstation.com,41.8786006,-87.6388812,True
+5,"800 N State St, Chicago, IL 60610, United States",Subway station,transitchicago.com,41.8967801,-87.6279205,True
+6,"521 N State St, Chicago, IL 60610, United States",Subway station,transitchicago.com,41.8917982,-87.628191,True
+7,"Chicago, IL 60654, United States",Subway station,,41.8959556,-87.635684,True
+8,"414 S La Salle St, Chicago, IL 60605, United States",Train station,metrarail.com,41.8752999,-87.63214769999999,True
+9,"Chicago, IL 60606, United States",Bus stop,,41.8791414,-87.6394517,True
+10,"230 S State St, Chicago, IL 60604, United States",Subway station,transitchicago.com,41.8782124,-87.6276726,True
+11,"225 S Canal St, Chicago, IL 60606, United States",Train depot,chicagounionstation.com,41.8786694,-87.6389755,True
+12,"22 E Roosevelt Rd, Chicago, IL 60605, United States",Subway station,transitchicago.com,41.8674302,-87.62664269999999,True
+13,"Chicago Ridge, IL 60415, United States",Train station,metrarail.com,41.7037907,-87.7797899,True
+14,"E 27th St, Chicago, IL 60616, United States",Train station,metrarail.com,41.8441667,-87.6133333,True
+15,"132 E Van Buren St, Chicago, IL 60605, United States",Train station,,41.8771275,-87.62293249999999,True
+16,"1167 S State St, Chicago, IL 60605, United States",Train station,transitchicago.com,41.8678699,-87.6273214,True
+17,"Chicago, IL 60604, United States",Subway station,transitchicago.com,41.8781559,-87.6293104,True
+18,"502 N Milwaukee Ave, Chicago, IL 60642, United States",Subway station,transitchicago.com,41.8912256,-87.6476036,True
+19,"4014 W Fullerton Ave, Chicago, IL 60639, United States",Train station,metrarail.com,41.9247475,-87.72796799999999,True
+0,"1060 W Addison St, Chicago, IL 60613, United States","Stadium,Baseball field,Tourist attraction",mlb.com,41.9484384,-87.6553327,True
+1,"1410 Special Olympics Dr, Chicago, IL 60605, United States","Stadium,Concert hall,Soccer field",soldierfield.com,41.8623132,-87.6166884,True
+2,"333 W 35th St, Chicago, IL 60616, United States","Stadium,Baseball field",mlb.com,41.8298609,-87.63366839999999,True
+3,"1901 W Madison St, Chicago, IL 60612, United States","Stadium,Attraction,Hockey rink,Live music venue,Arena",unitedcenter.com,41.8806908,-87.6741759,True
+4,"2601 W Addison St, Chicago, IL 60618, United States",Stadium,cpsathletics.com,41.9455156,-87.6924927,True
+5,"1117 S Central Ave, Chicago, IL 60644, United States","Stadium,Athletic field",cpsathletics.com,41.8669077,-87.7638289,True
+6,"2233 N Central Ave, Chicago, IL 60639, United States",Stadium,cpsathletics.com,41.9228721,-87.7650815,True
+7,"5105 N Leavitt St, Chicago, IL 60625, United States",Stadium,cpsathletics.com,41.9741834,-87.68373559999999,True
+8,"6054 S Damen Ave, Chicago, IL 60636, United States",Stadium,,41.7857246,-87.6749761,True
+9,"901 W Roosevelt Rd, Chicago, IL 60608, United States",Baseball field,uicflames.com,41.8654527,-87.6488105,True
+10,"2423 E 82nd St, Chicago, IL 60617, United States",Stadium,,41.7455051,-87.5649218,True
+11,"W 79th St, Chicago, IL 60652, United States",Stadium,,41.750955,-87.6869049,True
+12,"E 55th St, Chicago, IL 60615, United States",Stadium,athletics.uchicago.edu,41.7940518,-87.6048373,True
+13,"810 E 103rd St, Chicago, IL 60628, United States",Stadium,cpsathletics.com,41.7085091,-87.6026376,True
+14,"Chicago, IL 60628, United States",Stadium,gocsucougars.com,41.7153074,-87.6068396,True
+15,"4 S Shields Ave, Chicago, IL 60616, United States","Stadium,Baseball field",whitesox.mlb.com,41.8307276,-87.6352187,True
+16,"1035 W 74th St, Chicago, IL 60621, United States",Stadium,cpsathletics.com,41.7590602,-87.6504841,True
+17,"Chicago, IL 60616, United States","Stadium,Soccer field",illinoistechathletics.com,41.8388919,-87.6285968,True
+18,"1909 S Laramie Ave, Cicero, IL 60804, United States",Stadium,,41.8542993,-87.75380559999999,True
+19,"1250 W 119th St, Chicago, IL 60643, United States",Sports complex,kroccenterchicago.org,41.6787719,-87.6538933,True
+0,"1543 N Kingsbury St, Chicago, IL 60642, United States","Night club,Live music venue,Lounge",prysmchicago.com,41.9093663,-87.6525434,True
+1,"5616 W Diversey Ave, Chicago, IL 60639, United States","Night club,Bar,Live music venue",stereochicago.com,41.931441,-87.7669801,True
+2,"4810 N Broadway, Chicago, IL 60640, United States","Night club,Club,Dance club,Lounge,Musical club",nocturnechicago.com,41.9694069,-87.660067,True
+3,"226 W Ontario St, Chicago, IL 60654, United States","Night club,Bar,Club",sound-bar.com,41.8934418,-87.6353769,True
+4,"1700 W Cortland St Suite 201, Chicago, IL 60622, United States",Night club,surrealnightlife.com,41.916332,-87.670632,True
+5,"646 N Franklin St, Chicago, IL 60654, United States","Night club,Bar,DJ service,Live music venue",spybarchicago.com,41.8937033,-87.6358657,True
+6,"215 W Ontario St, Chicago, IL 60654, United States",Night club,litechicago.com,41.892961,-87.63483599999999,True
+7,"3124 N Central Ave, Chicago, IL 60634, United States","Night club,Bar",,41.9374504,-87.76687779999999,True
+8,"151 W Kinzie St, Chicago, IL 60654, United States","Night club,Bar,Cocktail bar,Lounge",tunnelchicago.com,41.8890402,-87.6330723,True
+9,"3124 N Central Ave, Chicago, IL 60641, United States","Night club,Bar",,41.9374598,-87.76686819999999,True
+10,"5 W Division St, Chicago, IL 60610, United States","Night club,Bar",primarynightclub.com,41.9037076,-87.6289997,True
+11,"353 North Clark, 65 W Kinzie St, Chicago, IL 60654, United States",Night club,bodegaimports.com,41.8889898,-87.63075289999999,True
+12,"9 W Division St, Chicago, IL 60610, United States","Night club,Bar,Dance hall",,41.903809,-87.629082,True
+13,"416 S Clark St, Chicago, IL 60605, United States",Night club,erasocialclub.com,41.8764042,-87.63108749999999,True
+14,"157 W Ontario St, Chicago, IL 60654, United States","Lounge,Night club",lorechicago.com,41.8929546,-87.63342829999999,True
+15,"3641 N Halsted St, Chicago, IL 60613, United States",Night club,m.facebook.com,41.9485937,-87.6493563,True
+16,"Smartbar, 3730 N Clark St, Chicago, IL 60613, United States","Night club,Bar",smartbarchicago.com,41.9497713,-87.6587675,True
+17,"3458 N Halsted St, Chicago, IL 60657, United States","Gay night club,Bar",hydratechicago.com,41.9453784,-87.6495995,True
+18,"157 W Ontario St Second Floor, Chicago, IL 60654, United States",Night club,lorechicago.com,41.8929015,-87.6334028,True
+19,"1431 W Lake St, Chicago, IL 60607, United States",Night club,,41.8852747,-87.66365929999999,True
+0,"678 N Orleans St, Chicago, IL 60654, United States","Bar,American restaurant,Restaurant,Hamburger restaurant,Lounge,Pub,Sandwich shop,Sports bar",greendoorchicago.com,41.8946282,-87.6374062,True
+1,"491 N Milwaukee Ave, Chicago, IL 60654, United States",Bar,richardsbarbrands.com,41.8909676,-87.6469631,True
+2,"2771 N Lincoln Ave, Chicago, IL 60614, United States",Bar,delilahschicago.com,41.9322652,-87.65806119999999,True
+3,"412 N State St, Chicago, IL 60654, United States",Bar,rossischicago.com,41.8897304,-87.6281508,True
+4,"1612 W Irving Park Rd Ste 1, Chicago, IL 60613, United States","Bar,Coffee shop,Restaurant",longroomchicago.com,41.9544231,-87.6696958,True
+5,"3281 W Armitage Ave, Chicago, IL 60647, United States","Bar,Restaurant",bestintentionschicago.com,41.9171619,-87.7101417,True
+6,"622 N Fairbanks Ct, Chicago, IL 60611, United States","Sports bar,American restaurant,Pub",timothyotooles.com,41.8932521,-87.6204905,True
+7,"50 E Chicago Ave, Chicago, IL 60611, United States",Bar,streeterstavern.com,41.896891,-87.62625,True
+8,"9 W Hubbard St, Chicago, IL 60654, United States","Bar,Bar & grill,Night club,Restaurant,Sports bar",theorychicago.com,41.8899304,-87.6285525,True
+9,"205 W Lake St, Chicago, IL 60606, United States",Pub,monkspubchicago.com,41.8855838,-87.6342756,True
+10,"15 W Division St, Chicago, IL 60610, United States","Bar,Sports bar,Taco restaurant",hopsmithchicago.com,41.903808,-87.629334,True
+11,"3201 W Armitage Ave, Chicago, IL 60647, United States","Bar,American restaurant,Cocktail bar",scofflawchicago.com,41.9172977,-87.7072039,True
+12,"216 N Wabash Ave, Chicago, IL 60601, United States","Bar & grill,American restaurant,Irish pub,Restaurant",emeraldloop.com,41.8863702,-87.6265311,True
+13,"210 W Kinzie St, Chicago, IL 60654, United States","Bar,Bar & grill,Irish pub,Pool hall,Pub,Restaurant",shamrockclubchicago.com,41.8892707,-87.6345443,True
+14,"12 S Michigan Ave, Chicago, IL 60603, United States","Bar,Restaurant",cindysrooftop.com,41.881662,-87.6249684,True
+15,"701 S Dearborn St, Chicago, IL 60605, United States","Pub,Bar",kaseystavern.com,41.8733028,-87.62899089999999,True
+16,"134 S Wabash Ave, Chicago, IL 60603, United States","Irish pub,American restaurant,Pub",millerspub.com,41.8798217,-87.62634829999999,True
+17,"1424 W Chicago Ave, Chicago, IL 60642, United States","Bar,Bar & grill,Chicken wings restaurant,Cocktail bar,Meal delivery,Takeout restaurant,Pizza delivery,Pizza takeaway,Restaurant",thefivestarbar.com,41.896379,-87.6634469,True
+18,"47 W Polk St, Chicago, IL 60605, United States","Bar & grill,American restaurant,Bar,Cocktail bar,Gastropub,Lounge,New American restaurant,Pub,Sports bar",barlouie.com,41.8720742,-87.62890469999999,True
+19,"806 W Randolph St, Chicago, IL 60607, United States","Bar,Cocktail bar,Pub",lonewolftavern.com,41.8846161,-87.6478096,True
