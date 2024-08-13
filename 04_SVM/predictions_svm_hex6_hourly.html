@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_98fc6f95818c69bb968f73ea10516247 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_98fc6f95818c69bb968f73ea10516247" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_98fc6f95818c69bb968f73ea10516247 = L.map(
+                "map_98fc6f95818c69bb968f73ea10516247",
+                {
+                    center: [41.834484765612245, -87.70948110918052],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_98fc6f95818c69bb968f73ea10516247);
+
+            
+
+        
+    
+            var tile_layer_4295ec233b8ad84336ef7253b2822ffe = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4295ec233b8ad84336ef7253b2822ffe.addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            map_98fc6f95818c69bb968f73ea10516247.fitBounds(
+                [[41.59940318765542, -87.95486406587429], [42.06956634356908, -87.46409815248674]],
+                {}
+            );
+        
+    
+        function geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff_styler(feature) {
+            switch(feature.id) {
+                case "8": 
+                    return {"color": "black", "fillColor": "#67000d", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "32": 
+                    return {"color": "black", "fillColor": "#fdd3c1", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "56": 
+                    return {"color": "black", "fillColor": "#fca285", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "104": 
+                    return {"color": "black", "fillColor": "#f14331", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "128": 
+                    return {"color": "black", "fillColor": "#fdcebb", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "152": 
+                    return {"color": "black", "fillColor": "#fb7353", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "176": 
+                    return {"color": "black", "fillColor": "#fed9c9", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "200": 
+                    return {"color": "black", "fillColor": "#fed8c7", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "224": case "464": 
+                    return {"color": "black", "fillColor": "#fff5f0", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "248": case "296": 
+                    return {"color": "black", "fillColor": "#ffeee7", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "272": 
+                    return {"color": "black", "fillColor": "#ffece4", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "320": case "344": 
+                    return {"color": "black", "fillColor": "#ffede5", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "368": 
+                    return {"color": "black", "fillColor": "#fff3ed", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "392": 
+                    return {"color": "black", "fillColor": "#fee8dd", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "416": 
+                    return {"color": "black", "fillColor": "#fff0e9", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "440": 
+                    return {"color": "black", "fillColor": "#fff0e8", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "488": case "512": case "536": 
+                    return {"color": "black", "fillColor": "#ffefe8", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "560": 
+                    return {"color": "black", "fillColor": "#ffece3", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "584": 
+                    return {"color": "black", "fillColor": "#fee7dc", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "608": 
+                    return {"color": "black", "fillColor": "#fff4ef", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                case "632": 
+                    return {"color": "black", "fillColor": "#fee5d8", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+                default:
+                    return {"color": "black", "fillColor": "#fedfd0", "fillOpacity": 0.9, "opacity": 0.4, "weight": 1};
+            }
+        }
+        function geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                            geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff = L.geoJson(null, {
+                onEachFeature: geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff_onEachFeature,
+            
+                style: geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff_styler,
+                pointToLayer: geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff_pointToLayer,
+        });
+
+        function geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff_add (data) {
+            geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff
+                .addData(data);
+        }
+            geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff_add({"bbox": [-87.95486406587429, 41.59940318765542, -87.46409815248674, 42.06956634356908], "features": [{"bbox": [-87.64775172815817, 41.84680252612192, -87.56317866077602, 41.91192505878881], "geometry": {"coordinates": [[[-87.60091797517546, 41.91192505878881], [-87.64322228362144, 41.899289116187184], [-87.64775172815817, 41.86672642966633], [-87.61003344230885, 41.84680252612192], [-87.56776467209356, 41.85941614001958], [-87.56317866077602, 41.89197596814658], [-87.60091797517546, 41.91192505878881]]], "type": "Polygon"}, "id": "8", "properties": {"Kernel_1_Prediction": 610.4551999613484, "Kernel_2_Prediction": 918.1326317846364, "Meta_Prediction": 814.143572973562, "Meta_Prediction_Log": 6.7118627639777335, "__folium_color": "#67000d", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031081402, "centroid": "POINT (360415.859294 578959.651113)", "dist_centre": 179.0, "evening_commuting_week": 0, "h3_hex_id": "862664c1fffffff", "hour": 8, "index": 0, "min_dist_airport": 15946.0, "morning_commuting": 1, "num_bars": 111, "num_hotels": 126, "num_stadiums": 1, "perc_commerc": 5.49, "perc_open": 6.05, "perc_resid": 10.16, "perc_transport": 2.43, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.71431056279829, 41.951794843819805, -87.62959523933912, 42.017000294308886], "geometry": {"coordinates": [[[-87.66744312282064, 42.017000294308886], [-87.70981858498062, 42.00431957550584], [-87.71431056279829, 41.97171546700499], [-87.6764839254106, 41.951794843819805], [-87.63414405293003, 41.96445315471353], [-87.62959523933912, 41.997054478616604], [-87.66744312282064, 42.017000294308886]]], "type": "Polygon"}, "id": "32", "properties": {"Kernel_1_Prediction": 10.88755191318343, "Kernel_2_Prediction": 35.630617310728056, "Meta_Prediction": 20.05954430664866, "Meta_Prediction_Log": 3.3327959331512726, "__folium_color": "#fdd3c1", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031030800, "centroid": "POINT (354807.005141 590581.085238)", "dist_centre": 11185.0, "evening_commuting_week": 0, "h3_hex_id": "862664d8fffffff", "hour": 8, "index": 1, "min_dist_airport": 19648.0, "morning_commuting": 1, "num_bars": 88, "num_hotels": 13, "num_stadiums": 1, "perc_commerc": 7.83, "perc_open": 0.35, "perc_resid": 54.15, "perc_transport": 0.36, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.72774820692267, 41.8540832594131, -87.64322228362144, 41.9192114227965], "geometry": {"coordinates": [[[-87.68099468459282, 41.9192114227965], [-87.72327536021545, 41.906545871600166], [-87.72774820692267, 41.87398041277048], [-87.68999698691196, 41.8540832594131], [-87.64775172815817, 41.86672642966633], [-87.64322228362144, 41.899289116187184], [-87.68099468459282, 41.9192114227965]]], "type": "Polygon"}, "id": "56", "properties": {"Kernel_1_Prediction": 30.20025541971003, "Kernel_2_Prediction": 61.14522409733372, "Meta_Prediction": 44.79143385748444, "Meta_Prediction_Log": 3.9655344694067947, "__folium_color": "#fca285", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031833100, "centroid": "POINT (353767.633801 579715.393342)", "dist_centre": 3937.0, "evening_commuting_week": 0, "h3_hex_id": "862664cafffffff", "hour": 8, "index": 6, "min_dist_airport": 12399.0, "morning_commuting": 1, "num_bars": 95, "num_hotels": 12, "num_stadiums": 1, "perc_commerc": 17.29, "perc_open": 5.98, "perc_resid": 24.48, "perc_transport": 0.17, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.87467088183058, 41.96620358885303, -87.79005116524165, 42.03141983182145], "geometry": {"coordinates": [[[-87.82796513124613, 42.03141983182145], [-87.87029266700704, 42.01867971853074], [-87.87467088183058, 41.986070300297904], [-87.83677846818084, 41.96620358885303], [-87.79448627658375, 41.97892119001148], [-87.79005116524165, 42.01152799663533], [-87.82796513124613, 42.03141983182145]]], "type": "Polygon"}, "id": "80", "properties": {"Kernel_1_Prediction": 6.579909128263331, "Kernel_2_Prediction": 34.008423962135495, "Meta_Prediction": 15.725897639219484, "Meta_Prediction_Log": 3.164754031891676, "__folium_color": "#fedfd0", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031760801, "centroid": "POINT (341504.713004 592091.877829)", "dist_centre": 20374.0, "evening_commuting_week": 0, "h3_hex_id": "86275936fffffff", "hour": 8, "index": 12, "min_dist_airport": 6674.0, "morning_commuting": 1, "num_bars": 10, "num_hotels": 4, "num_stadiums": 0, "perc_commerc": 28.87, "perc_open": 20.61, "perc_resid": 12.76, "perc_transport": 0.08, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.68099468459282, 41.899289116187184, -87.59635051489684, 41.96445315471353], "geometry": {"coordinates": [[[-87.63414405293003, 41.96445315471353], [-87.6764839254106, 41.951794843819805], [-87.68099468459282, 41.9192114227965], [-87.64322228362144, 41.899289116187184], [-87.60091797517546, 41.91192505878881], [-87.59635051489684, 41.94450565823978], [-87.63414405293003, 41.96445315471353]]], "type": "Polygon"}, "id": "104", "properties": {"Kernel_1_Prediction": 128.82742851373933, "Kernel_2_Prediction": 140.48342642074311, "Meta_Prediction": 156.27994140646254, "Meta_Prediction_Log": 5.101310274250769, "__folium_color": "#f14331", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031071400, "centroid": "POINT (357612.224993 584768.775956)", "dist_centre": 4905.0, "evening_commuting_week": 0, "h3_hex_id": "862664c17ffffff", "hour": 8, "index": 15, "min_dist_airport": 18669.0, "morning_commuting": 1, "num_bars": 184, "num_hotels": 15, "num_stadiums": 1, "perc_commerc": 30.83, "perc_open": 35.22, "perc_resid": 13.26, "perc_transport": 0.18, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.76108070772123, 41.906545871600166, -87.6764839254106, 41.97171546700499], "geometry": {"coordinates": [[[-87.71431056279829, 41.97171546700499], [-87.75662668051194, 41.95902749527987], [-87.76108070772123, 41.9264413389641], [-87.72327536021545, 41.906545871600166], [-87.68099468459282, 41.9192114227965], [-87.6764839254106, 41.951794843819805], [-87.71431056279829, 41.97171546700499]]], "type": "Polygon"}, "id": "128", "properties": {"Kernel_1_Prediction": 18.88039245445932, "Kernel_2_Prediction": 16.66742078097576, "Meta_Prediction": 21.7133577583667, "Meta_Prediction_Log": 3.390149180866232, "__folium_color": "#fdcebb", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031200401, "centroid": "POINT (350962.335756 585524.364374)", "dist_centre": 8887.0, "evening_commuting_week": 0, "h3_hex_id": "862664ca7ffffff", "hour": 8, "index": 20, "min_dist_airport": 16416.0, "morning_commuting": 1, "num_bars": 128, "num_hotels": 1, "num_stadiums": 1, "perc_commerc": 2.03, "perc_open": 4.55, "perc_resid": 44.62, "perc_transport": 3.18, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.95486406587429, 41.97332310147526, -87.87029266700704, 42.03854448112274], "geometry": {"coordinates": [[[-87.90823946187723, 42.03854448112274], [-87.9505427769519, 42.025774718423534], [-87.95486406587429, 41.99316277513328], [-87.9169389761855, 41.97332310147526], [-87.87467088183058, 41.986070300297904], [-87.87029266700704, 42.01867971853074], [-87.90823946187723, 42.03854448112274]]], "type": "Polygon"}, "id": "152", "properties": {"Kernel_1_Prediction": 67.23759637941232, "Kernel_2_Prediction": 92.73974676662132, "Meta_Prediction": 87.18202582304512, "Meta_Prediction_Log": 4.555339466333622, "__folium_color": "#fb7353", "airport_in_hex": 1.0, "bar_hours": 0, "census": 17031980000, "centroid": "POINT (334854.775191 592847.163792)", "dist_centre": 26344.0, "evening_commuting_week": 0, "h3_hex_id": "862759347ffffff", "hour": 8, "index": 32, "min_dist_airport": 2867.0, "morning_commuting": 1, "num_bars": 1, "num_hotels": 1, "num_stadiums": 0, "perc_commerc": 0.18, "perc_open": 0.0, "perc_resid": 0.0, "perc_transport": 96.8, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.82096488127388, 41.76370422015321, -87.73667486381765, 41.82876027942254], "geometry": {"coordinates": [[[-87.77440485946161, 41.82876027942254], [-87.8165674356571, 41.81608053471316], [-87.82096488127388, 41.78355117689125], [-87.78325615291314, 41.76370422015321], [-87.74112870088481, 41.77636155923928], [-87.73667486381765, 41.80888824269269], [-87.77440485946161, 41.82876027942254]]], "type": "Polygon"}, "id": "176", "properties": {"Kernel_1_Prediction": 7.493374626228376, "Kernel_2_Prediction": 38.12551545352596, "Meta_Prediction": 17.741659928534794, "Meta_Prediction_Log": 3.2464396428442153, "__folium_color": "#fed9c9", "airport_in_hex": 1.0, "bar_hours": 0, "census": 17031560700, "centroid": "POINT (346086.061591 569618.899817)", "dist_centre": 14339.0, "evening_commuting_week": 0, "h3_hex_id": "862664527ffffff", "hour": 8, "index": 33, "min_dist_airport": 2451.0, "morning_commuting": 1, "num_bars": 26, "num_hotels": 4, "num_stadiums": 0, "perc_commerc": 9.68, "perc_open": 0.0, "perc_resid": 50.29, "perc_transport": 2.69, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.69448855720582, 41.801639792015344, -87.61003344230885, 41.86672642966633], "geometry": {"coordinates": [[[-87.64775172815817, 41.86672642966633], [-87.68999698691196, 41.8540832594131], [-87.69448855720582, 41.82153854500144], [-87.65679134391456, 41.801639792015344], [-87.61458147664726, 41.81426062088255], [-87.61003344230885, 41.84680252612192], [-87.64775172815817, 41.86672642966633]]], "type": "Polygon"}, "id": "200", "properties": {"Kernel_1_Prediction": 13.852837561114473, "Kernel_2_Prediction": 19.733917886517673, "Meta_Prediction": 18.09719293531426, "Meta_Prediction_Log": 3.2601794967673228, "__folium_color": "#fed8c7", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031283800, "centroid": "POINT (356571.346703 573909.612256)", "dist_centre": 3961.0, "evening_commuting_week": 0, "h3_hex_id": "862664cf7ffffff", "hour": 8, "index": 34, "min_dist_airport": 9831.0, "morning_commuting": 1, "num_bars": 44, "num_hotels": 5, "num_stadiums": 4, "perc_commerc": 4.77, "perc_open": 0.0, "perc_resid": 42.87, "perc_transport": 17.15, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.80775379811128, 41.861307717075164, -87.72327536021545, 41.9264413389641], "geometry": {"coordinates": [[[-87.76108070772123, 41.9264413389641], [-87.8033375796293, 41.9137462103282], [-87.80775379811128, 41.88117806531517], [-87.76996978378135, 41.861307717075164], [-87.72774820692267, 41.87398041277048], [-87.72327536021545, 41.906545871600166], [-87.76108070772123, 41.9264413389641]]], "type": "Polygon"}, "id": "224", "properties": {"Kernel_1_Prediction": 6.737517860552646, "Kernel_2_Prediction": -0.08407741879988606, "Meta_Prediction": 5.95702043458271, "Meta_Prediction_Log": 2.632898464766463, "__folium_color": "#fff5f0", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031252000, "centroid": "POINT (347120.198984 580471.062328)", "dist_centre": 10610.0, "evening_commuting_week": 0, "h3_hex_id": "862664c87ffffff", "hour": 8, "index": 40, "min_dist_airport": 11947.0, "morning_commuting": 1, "num_bars": 19, "num_hotels": 0, "num_stadiums": 2, "perc_commerc": 4.58, "perc_open": 0.0, "perc_resid": 51.49, "perc_transport": 0.47, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.74769958037677, 42.00431957550584, -87.66291305202513, 42.06956634356908], "geometry": {"coordinates": [[[-87.70081540307007, 42.06956634356908], [-87.74322648039328, 42.05686317721076], [-87.74769958037677, 42.02423842850326], [-87.70981858498062, 42.00431957550584], [-87.66744312282064, 42.017000294308886], [-87.66291305202513, 42.04962229554636], [-87.70081540307007, 42.06956634356908]]], "type": "Polygon"}, "id": "248", "properties": {"Kernel_1_Prediction": 7.553622965715163, "Kernel_2_Prediction": 5.970072132573996, "Meta_Prediction": 8.448566448067353, "Meta_Prediction_Log": 2.797621940393715, "__folium_color": "#ffeee7", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031020200, "centroid": "POINT (352000.20596 596396.571886)", "dist_centre": 17584.0, "evening_commuting_week": 0, "h3_hex_id": "862664d87ffffff", "hour": 8, "index": 73, "min_dist_airport": 18008.0, "morning_commuting": 1, "num_bars": 7, "num_hotels": 0, "num_stadiums": 0, "perc_commerc": 6.24, "perc_open": 7.09, "perc_resid": 52.77, "perc_transport": 0.9, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.66130154233943, 41.74921560218355, -87.5769171849233, 41.81426062088255], "geometry": {"coordinates": [[[-87.61458147664726, 41.81426062088255], [-87.65679134391456, 41.801639792015344], [-87.66130154233943, 41.76911586870779], [-87.62365821528695, 41.74921560218355], [-87.58148371396562, 41.76181412919314], [-87.5769171849233, 41.79433520661749], [-87.61458147664726, 41.81426062088255]]], "type": "Polygon"}, "id": "272", "properties": {"Kernel_1_Prediction": 7.32466383776316, "Kernel_2_Prediction": 9.169341408773157, "Meta_Prediction": 9.173268894255783, "Meta_Prediction_Log": 2.8408482023766073, "__folium_color": "#ffece4", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031836200, "centroid": "POINT (359373.468271 568107.028134)", "dist_centre": 9526.0, "evening_commuting_week": 0, "h3_hex_id": "862664cc7ffffff", "hour": 8, "index": 93, "min_dist_airport": 11076.0, "morning_commuting": 1, "num_bars": 25, "num_hotels": 4, "num_stadiums": 1, "perc_commerc": 0.47, "perc_open": 17.5, "perc_resid": 3.76, "perc_transport": 0.0, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.84117573319676, 41.9137462103282, -87.75662668051194, 41.97892119001148], "geometry": {"coordinates": [[[-87.79448627658375, 41.97892119001148], [-87.83677846818084, 41.96620358885303], [-87.84117573319676, 41.93361478356448], [-87.8033375796293, 41.9137462103282], [-87.76108070772123, 41.9264413389641], [-87.75662668051194, 41.95902749527987], [-87.79448627658375, 41.97892119001148]]], "type": "Polygon"}, "id": "296", "properties": {"Kernel_1_Prediction": 7.620473993372374, "Kernel_2_Prediction": 5.975191921538567, "Meta_Prediction": 8.509991256034224, "Meta_Prediction_Log": 2.8013590881777324, "__folium_color": "#ffeee7", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031150700, "centroid": "POINT (344313.242146 586279.879396)", "dist_centre": 14905.0, "evening_commuting_week": 0, "h3_hex_id": "862664cb7ffffff", "hour": 8, "index": 94, "min_dist_airport": 9872.0, "morning_commuting": 1, "num_bars": 37, "num_hotels": 0, "num_stadiums": 0, "perc_commerc": 5.34, "perc_open": 0.0, "perc_resid": 58.87, "perc_transport": 0.03, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.79448627658375, 41.95902749527987, -87.70981858498062, 42.02423842850326], "geometry": {"coordinates": [[[-87.74769958037677, 42.02423842850326], [-87.79005116524165, 42.01152799663533], [-87.79448627658375, 41.97892119001148], [-87.75662668051194, 41.95902749527987], [-87.71431056279829, 41.97171546700499], [-87.70981858498062, 42.00431957550584], [-87.74769958037677, 42.02423842850326]]], "type": "Polygon"}, "id": "320", "properties": {"Kernel_1_Prediction": 7.633291629156074, "Kernel_2_Prediction": 8.000287656084538, "Meta_Prediction": 9.110148434605213, "Meta_Prediction_Log": 2.8371566688733982, "__folium_color": "#ffede5", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031110100, "centroid": "POINT (348155.458782 591336.518308)", "dist_centre": 15026.0, "evening_commuting_week": 0, "h3_hex_id": "862664d9fffffff", "hour": 8, "index": 108, "min_dist_airport": 13057.0, "morning_commuting": 1, "num_bars": 30, "num_hotels": 4, "num_stadiums": 0, "perc_commerc": 4.12, "perc_open": 25.45, "perc_resid": 35.42, "perc_transport": 3.64, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.74112870088481, 41.756487920259694, -87.65679134391456, 41.82153854500144], "geometry": {"coordinates": [[[-87.69448855720582, 41.82153854500144], [-87.73667486381765, 41.80888824269269], [-87.74112870088481, 41.77636155923928], [-87.70345260366805, 41.756487920259694], [-87.66130154233943, 41.76911586870779], [-87.65679134391456, 41.801639792015344], [-87.69448855720582, 41.82153854500144]]], "type": "Polygon"}, "id": "344", "properties": {"Kernel_1_Prediction": 8.38199553971617, "Kernel_2_Prediction": 5.8460145596896, "Meta_Prediction": 9.155197950636923, "Meta_Prediction_Log": 2.8397927338082787, "__folium_color": "#ffede5", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031580501, "centroid": "POINT (352729.370852 568863.000447)", "dist_centre": 10206.0, "evening_commuting_week": 0, "h3_hex_id": "862664cd7ffffff", "hour": 8, "index": 118, "min_dist_airport": 4431.0, "morning_commuting": 1, "num_bars": 42, "num_hotels": 3, "num_stadiums": 1, "perc_commerc": 9.24, "perc_open": 0.0, "perc_resid": 47.67, "perc_transport": 0.19, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.58148371396562, 41.741887290147346, -87.4970526956013, 41.80692653137024], "geometry": {"coordinates": [[[-87.53468392697748, 41.80692653137024], [-87.5769171849233, 41.79433520661749], [-87.58148371396562, 41.76181412919314], [-87.54387329566734, 41.741887290147346], [-87.50167552387444, 41.754456365284774], [-87.4970526956013, 41.786974511130325], [-87.53468392697748, 41.80692653137024]]], "type": "Polygon"}, "id": "368", "properties": {"Kernel_1_Prediction": 5.606943959649261, "Kernel_2_Prediction": 6.121639726749905, "Meta_Prediction": 6.747292783173608, "Meta_Prediction_Log": 2.6881408669204827, "__folium_color": "#fff3ed", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031431301, "centroid": "POINT (366018.346482 567350.982888)", "dist_centre": 11931.0, "evening_commuting_week": 0, "h3_hex_id": "862664cefffffff", "hour": 8, "index": 220, "min_dist_airport": 17754.0, "morning_commuting": 1, "num_bars": 2, "num_hotels": 0, "num_stadiums": 0, "perc_commerc": 5.95, "perc_open": 0.0, "perc_resid": 52.41, "perc_transport": 1.15, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.92127944944478, 41.92089010901421, -87.83677846818084, 41.986070300297904], "geometry": {"coordinates": [[[-87.87467088183058, 41.986070300297904], [-87.9169389761855, 41.97332310147526], [-87.92127944944478, 41.94073173357185], [-87.88340863072044, 41.92089010901421], [-87.84117573319676, 41.93361478356448], [-87.83677846818084, 41.96620358885303], [-87.87467088183058, 41.986070300297904]]], "type": "Polygon"}, "id": "392", "properties": {"Kernel_1_Prediction": 8.688169551977337, "Kernel_2_Prediction": 11.870095646544968, "Meta_Prediction": 11.180815080327344, "Meta_Prediction_Log": 2.951667292634697, "__folium_color": "#fee8dd", "airport_in_hex": 1.0, "bar_hours": 0, "census": 17031760802, "centroid": "POINT (337664.951541 587035.321014)", "dist_centre": 21328.0, "evening_commuting_week": 0, "h3_hex_id": "86275934fffffff", "hour": 8, "index": 249, "min_dist_airport": 3874.0, "morning_commuting": 1, "num_bars": 0, "num_hotels": 0, "num_stadiums": 0, "perc_commerc": 0.52, "perc_open": 86.86, "perc_resid": 6.57, "perc_transport": 0.21, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.77440485946161, 41.80888824269269, -87.68999698691196, 41.87398041277048], "geometry": {"coordinates": [[[-87.72774820692267, 41.87398041277048], [-87.76996978378135, 41.861307717075164], [-87.77440485946161, 41.82876027942254], [-87.73667486381765, 41.80888824269269], [-87.69448855720582, 41.82153854500144], [-87.68999698691196, 41.8540832594131], [-87.72774820692267, 41.87398041277048]]], "type": "Polygon"}, "id": "416", "properties": {"Kernel_1_Prediction": 6.614900541865703, "Kernel_2_Prediction": 5.983918053116213, "Meta_Prediction": 7.610961795132727, "Meta_Prediction_Log": 2.7452163839807313, "__folium_color": "#fff0e9", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031580200, "centroid": "POINT (349925.577288 574665.433673)", "dist_centre": 8587.0, "evening_commuting_week": 0, "h3_hex_id": "862664c8fffffff", "hour": 8, "index": 259, "min_dist_airport": 6294.0, "morning_commuting": 1, "num_bars": 13, "num_hotels": 0, "num_stadiums": 0, "perc_commerc": 5.56, "perc_open": 0.52, "perc_resid": 27.46, "perc_transport": 12.62, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.67479386223037, 41.651745260960496, -87.59059738584097, 41.71671251642064], "geometry": {"coordinates": [[[-87.62818694684076, 41.71671251642064], [-87.67030278800902, 41.70410688233561], [-87.67479386223037, 41.67162184681404], [-87.63722520226104, 41.651745260960496], [-87.59514455597292, 41.66432862015156], [-87.59059738584097, 41.69681082217469], [-87.62818694684076, 41.71671251642064]]], "type": "Polygon"}, "id": "440", "properties": {"Kernel_1_Prediction": 7.570173268406416, "Kernel_2_Prediction": 4.235469094048597, "Meta_Prediction": 7.959181570349875, "Meta_Prediction_Log": 2.767337584425117, "__folium_color": "#fff0e8", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031490700, "centroid": "POINT (358332.179051 557267.748211)", "dist_centre": 20342.0, "evening_commuting_week": 0, "h3_hex_id": "862664567ffffff", "hour": 8, "index": 275, "min_dist_airport": 15117.0, "morning_commuting": 1, "num_bars": 6, "num_hotels": 2, "num_stadiums": 0, "perc_commerc": 1.65, "perc_open": 2.22, "perc_resid": 57.4, "perc_transport": 1.31, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.61458147664726, 41.79433520661749, -87.53007945981324, 41.85941614001958], "geometry": {"coordinates": [[[-87.56776467209356, 41.85941614001958], [-87.61003344230885, 41.84680252612192], [-87.61458147664726, 41.81426062088255], [-87.5769171849233, 41.79433520661749], [-87.53468392697748, 41.80692653137024], [-87.53007945981324, 41.83946554154699], [-87.56776467209356, 41.85941614001958]]], "type": "Polygon"}, "id": "464", "properties": {"Kernel_1_Prediction": 4.914816202077752, "Kernel_2_Prediction": 5.999449768586707, "Meta_Prediction": 6.091233660390329, "Meta_Prediction_Log": 2.6424981243553947, "__folium_color": "#fff5f0", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031380100, "centroid": "POINT (363217.901848 573153.717753)", "dist_centre": 5498.0, "evening_commuting_week": 0, "h3_hex_id": "862664ce7ffffff", "hour": 8, "index": 280, "min_dist_airport": 15595.0, "morning_commuting": 1, "num_bars": 1, "num_hotels": 1, "num_stadiums": 0, "perc_commerc": 2.9, "perc_open": 4.01, "perc_resid": 33.43, "perc_transport": 0.66, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.70792510676493, 41.70410688233561, -87.62365821528695, 41.76911586870779], "geometry": {"coordinates": [[[-87.66130154233943, 41.76911586870779], [-87.70345260366805, 41.756487920259694], [-87.70792510676493, 41.72398203759853], [-87.67030278800902, 41.70410688233561], [-87.62818694684076, 41.71671251642064], [-87.62365821528695, 41.74921560218355], [-87.66130154233943, 41.76911586870779]]], "type": "Polygon"}, "id": "488", "properties": {"Kernel_1_Prediction": 7.442449058641793, "Kernel_2_Prediction": 5.947883220646226, "Meta_Prediction": 8.342441378137961, "Meta_Prediction_Log": 2.791132089643124, "__folium_color": "#ffefe8", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031730202, "centroid": "POINT (355531.573493 563063.76964)", "dist_centre": 14750.0, "evening_commuting_week": 0, "h3_hex_id": "862664cdfffffff", "hour": 8, "index": 310, "min_dist_airport": 9091.0, "morning_commuting": 1, "num_bars": 18, "num_hotels": 3, "num_stadiums": 2, "perc_commerc": 1.62, "perc_open": 0.0, "perc_resid": 44.22, "perc_transport": 5.31, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.62818694684076, 41.69681082217469, -87.54387329566734, 41.76181412919314], "geometry": {"coordinates": [[[-87.58148371396562, 41.76181412919314], [-87.62365821528695, 41.74921560218355], [-87.62818694684076, 41.71671251642064], [-87.59059738584097, 41.69681082217469], [-87.5484582247687, 41.7093870868261], [-87.54387329566734, 41.741887290147346], [-87.58148371396562, 41.76181412919314]]], "type": "Polygon"}, "id": "512", "properties": {"Kernel_1_Prediction": 7.172532315783627, "Kernel_2_Prediction": 6.006316584276604, "Meta_Prediction": 8.117428096593112, "Meta_Prediction_Log": 2.777230963543046, "__folium_color": "#ffefe8", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031480400, "centroid": "POINT (362173.992341 562307.647962)", "dist_centre": 15591.0, "evening_commuting_week": 0, "h3_hex_id": "862664ccfffffff", "hour": 8, "index": 327, "min_dist_airport": 15220.0, "morning_commuting": 1, "num_bars": 19, "num_hotels": 5, "num_stadiums": 3, "perc_commerc": 1.5, "perc_open": 0.0, "perc_resid": 51.86, "perc_transport": 1.63, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.78767239728809, 41.71134706464121, -87.70345260366805, 41.77636155923928], "geometry": {"coordinates": [[[-87.74112870088481, 41.77636155923928], [-87.78325615291314, 41.76370422015321], [-87.78767239728809, 41.731195626177836], [-87.75001745917396, 41.71134706464121], [-87.70792510676493, 41.72398203759853], [-87.70345260366805, 41.756487920259694], [-87.74112870088481, 41.77636155923928]]], "type": "Polygon"}, "id": "536", "properties": {"Kernel_1_Prediction": 7.584917831668967, "Kernel_2_Prediction": 4.823156870284215, "Meta_Prediction": 8.143233206087142, "Meta_Prediction_Log": 2.7788350259451957, "__folium_color": "#ffefe8", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031640800, "centroid": "POINT (348889.937865 563819.818529)", "dist_centre": 16521.0, "evening_commuting_week": 0, "h3_hex_id": "86266452fffffff", "hour": 8, "index": 343, "min_dist_airport": 4799.0, "morning_commuting": 1, "num_bars": 5, "num_hotels": 3, "num_stadiums": 0, "perc_commerc": 6.67, "perc_open": 0.0, "perc_resid": 49.81, "perc_transport": 4.37, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.64173475315134, 41.59940318765542, -87.55760864113398, 41.66432862015156], "geometry": {"coordinates": [[[-87.59514455597292, 41.66432862015156], [-87.63722520226104, 41.651745260960496], [-87.64173475315134, 41.61928111868054], [-87.60421963258605, 41.59940318765542], [-87.56217415574235, 41.61196431139297], [-87.55760864113398, 41.644425583726324], [-87.59514455597292, 41.66432862015156]]], "type": "Polygon"}, "id": "560", "properties": {"Kernel_1_Prediction": 8.71456804322052, "Kernel_2_Prediction": 6.008496206331536, "Meta_Prediction": 9.500603162690675, "Meta_Prediction_Log": 2.859776435608359, "__folium_color": "#ffece3", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031540101, "centroid": "POINT (361131.181393 551474.943091)", "dist_centre": 26222.0, "evening_commuting_week": 0, "h3_hex_id": "86266456fffffff", "hour": 8, "index": 448, "min_dist_airport": 21381.0, "morning_commuting": 1, "num_bars": 0, "num_hotels": 0, "num_stadiums": 0, "perc_commerc": 2.95, "perc_open": 26.25, "perc_resid": 16.85, "perc_transport": 1.73, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.59514455597292, 41.644425583726324, -87.51090155949316, 41.7093870868261], "geometry": {"coordinates": [[[-87.5484582247687, 41.7093870868261], [-87.59059738584097, 41.69681082217469], [-87.59514455597292, 41.66432862015156], [-87.55760864113398, 41.644425583726324], [-87.51550479445925, 41.65697962548986], [-87.51090155949316, 41.68945890866503], [-87.5484582247687, 41.7093870868261]]], "type": "Polygon"}, "id": "584", "properties": {"Kernel_1_Prediction": 11.01838856182734, "Kernel_2_Prediction": 5.998493119699731, "Meta_Prediction": 11.563229550349137, "Meta_Prediction_Log": 2.971452387508058, "__folium_color": "#fee7dc", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031550200, "centroid": "POINT (364972.912769 556511.478697)", "dist_centre": 21862.0, "evening_commuting_week": 0, "h3_hex_id": "862664197ffffff", "hour": 8, "index": 457, "min_dist_airport": 20578.0, "morning_commuting": 1, "num_bars": 10, "num_hotels": 0, "num_stadiums": 0, "perc_commerc": 1.32, "perc_open": 11.82, "perc_resid": 8.17, "perc_transport": 15.55, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.75445240704941, 41.659009200518796, -87.67030278800902, 41.72398203759853], "geometry": {"coordinates": [[[-87.70792510676493, 41.72398203759853], [-87.75001745917396, 41.71134706464121], [-87.75445240704941, 41.678859281012066], [-87.71685113972813, 41.659009200518796], [-87.67479386223037, 41.67162184681404], [-87.67030278800902, 41.70410688233561], [-87.70792510676493, 41.72398203759853]]], "type": "Polygon"}, "id": "608", "properties": {"Kernel_1_Prediction": 6.496194493977647, "Kernel_2_Prediction": 1.9831320997656974, "Meta_Prediction": 6.341564512371035, "Meta_Prediction_Log": 2.660160577611037, "__folium_color": "#fff4ef", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031750400, "centroid": "POINT (351692.223621 558023.945091)", "dist_centre": 20572.0, "evening_commuting_week": 0, "h3_hex_id": "862664577ffffff", "hour": 8, "index": 486, "min_dist_airport": 11089.0, "morning_commuting": 1, "num_bars": 17, "num_hotels": 0, "num_stadiums": 0, "perc_commerc": 5.5, "perc_open": 7.78, "perc_resid": 49.62, "perc_transport": 2.62, "temp": 9.9}, "type": "Feature"}, {"bbox": [-87.5484582247687, 41.68945890866503, -87.46409815248674, 41.754456365284774], "geometry": {"coordinates": [[[-87.50167552387444, 41.754456365284774], [-87.54387329566734, 41.741887290147346], [-87.5484582247687, 41.7093870868261], [-87.51090155949316, 41.68945890866503], [-87.46873924758304, 41.702005773687254], [-87.46409815248674, 41.734503009065754], [-87.50167552387444, 41.754456365284774]]], "type": "Polygon"}, "id": "632", "properties": {"Kernel_1_Prediction": 14.047538720028975, "Kernel_2_Prediction": 0.9614447107717936, "Meta_Prediction": 12.8148765443891, "Meta_Prediction_Log": 3.0336009663593275, "__folium_color": "#fee5d8", "airport_in_hex": 0.0, "bar_hours": 0, "census": 17031520100, "centroid": "POINT (368817.187046 561551.453504)", "dist_centre": 18368.0, "evening_commuting_week": 0, "h3_hex_id": "8626641b7ffffff", "hour": 8, "index": 591, "min_dist_airport": 21682.0, "morning_commuting": 1, "num_bars": 3, "num_hotels": 0, "num_stadiums": 0, "perc_commerc": 2.48, "perc_open": 21.68, "perc_resid": 5.38, "perc_transport": 28.73, "temp": 9.9}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["h3_hex_id", "Meta_Prediction", "num_hotels"];
+    let aliases = ["h3_hex_id", "Meta_Prediction", "num_hotels"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+    geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["index", "census", "h3_hex_id", "centroid", "min_dist_airport", "dist_centre", "num_stadiums", "num_hotels", "num_bars", "airport_in_hex", "perc_transport", "perc_resid", "perc_commerc", "perc_open", "temp", "hour", "morning_commuting", "bar_hours", "evening_commuting_week", "Meta_Prediction", "Kernel_1_Prediction", "Kernel_2_Prediction", "Meta_Prediction_Log"];
+    let aliases = ["index", "census", "h3_hex_id", "centroid", "min_dist_airport", "dist_centre", "num_stadiums", "num_hotels", "num_bars", "airport_in_hex", "perc_transport", "perc_resid", "perc_commerc", "perc_open", "temp", "hour", "morning_commuting", "bar_hours", "evening_commuting_week", "Meta_Prediction", "Kernel_1_Prediction", "Kernel_2_Prediction", "Meta_Prediction_Log"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumpopup"});
+                     
+    
+            geo_json_d81fbb51a096e68ce2fe3fbc9f22e6ff.addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+    var color_map_6dff0ea6b17fc7e69b215d9cbb65c067 = {};
+
+    
+    color_map_6dff0ea6b17fc7e69b215d9cbb65c067.color = d3.scale.threshold()
+              .domain([2.632898464766463, 2.641072741919191, 2.649247019071919, 2.657421296224647, 2.665595573377375, 2.673769850530103, 2.681944127682831, 2.690118404835559, 2.698292681988287, 2.706466959141015, 2.714641236293743, 2.722815513446471, 2.730989790599199, 2.739164067751927, 2.747338344904655, 2.755512622057383, 2.763686899210111, 2.771861176362839, 2.780035453515567, 2.788209730668295, 2.796384007821023, 2.804558284973751, 2.812732562126479, 2.820906839279207, 2.829081116431935, 2.837255393584663, 2.845429670737391, 2.853603947890119, 2.8617782250428467, 2.869952502195575, 2.8781267793483027, 2.886301056501031, 2.8944753336537588, 2.902649610806487, 2.9108238879592148, 2.918998165111943, 2.9271724422646708, 2.935346719417399, 2.943520996570127, 2.951695273722855, 2.959869550875583, 2.968043828028311, 2.976218105181039, 2.984392382333767, 2.992566659486495, 3.000740936639223, 3.008915213791951, 3.017089490944679, 3.025263768097407, 3.0334380452501346, 3.041612322402863, 3.049786599555591, 3.057960876708319, 3.0661351538610466, 3.074309431013775, 3.0824837081665026, 3.090657985319231, 3.0988322624719586, 3.107006539624687, 3.1151808167774147, 3.123355093930143, 3.1315293710828707, 3.139703648235599, 3.1478779253883267, 3.156052202541055, 3.1642264796937827, 3.172400756846511, 3.1805750339992387, 3.188749311151967, 3.1969235883046947, 3.205097865457423, 3.2132721426101507, 3.221446419762879, 3.2296206969156067, 3.2377949740683345, 3.2459692512210627, 3.254143528373791, 3.2623178055265187, 3.2704920826792465, 3.2786663598319747, 3.286840636984703, 3.2950149141374308, 3.3031891912901585, 3.3113634684428868, 3.319537745595615, 3.3277120227483428, 3.3358862999010706, 3.3440605770537988, 3.3522348542065266, 3.360409131359255, 3.3685834085119826, 3.376757685664711, 3.3849319628174386, 3.393106239970167, 3.4012805171228946, 3.4094547942756224, 3.4176290714283506, 3.425803348581079, 3.4339776257338066, 3.442151902886535, 3.4503261800392626, 3.458500457191991, 3.4666747343447186, 3.4748490114974464, 3.4830232886501746, 3.491197565802903, 3.4993718429556306, 3.5075461201083584, 3.5157203972610866, 3.523894674413815, 3.5320689515665427, 3.5402432287192704, 3.5484175058719987, 3.5565917830247264, 3.5647660601774547, 3.5729403373301825, 3.5811146144829107, 3.5892888916356385, 3.5974631687883667, 3.6056374459410945, 3.6138117230938227, 3.6219860002465505, 3.6301602773992787, 3.6383345545520065, 3.6465088317047343, 3.6546831088574625, 3.6628573860101907, 3.6710316631629185, 3.6792059403156463, 3.6873802174683745, 3.6955544946211027, 3.7037287717738305, 3.7119030489265583, 3.7200773260792865, 3.7282516032320148, 3.7364258803847425, 3.7446001575374703, 3.7527744346901986, 3.760948711842927, 3.7691229889956546, 3.7772972661483823, 3.78547154330111, 3.7936458204538384, 3.8018200976065666, 3.8099943747592944, 3.8181686519120226, 3.8263429290647504, 3.8345172062174786, 3.8426914833702064, 3.8508657605229346, 3.859040037675663, 3.8672143148283906, 3.8753885919811184, 3.883562869133846, 3.8917371462865744, 3.8999114234393026, 3.9080857005920304, 3.916259977744758, 3.9244342548974864, 3.9326085320502147, 3.9407828092029424, 3.94895708635567, 3.9571313635083984, 3.9653056406611267, 3.9734799178138545, 3.9816541949665822, 3.98982847211931, 3.9980027492720387, 4.0061770264247665, 4.014351303577494, 4.022525580730222, 4.030699857882951, 4.0388741350356785, 4.047048412188406, 4.055222689341134, 4.063396966493862, 4.0715712436465905, 4.079745520799318, 4.087919797952046, 4.096094075104775, 4.1042683522575025, 4.11244262941023, 4.120616906562958, 4.128791183715686, 4.1369654608684145, 4.145139738021142, 4.15331401517387, 4.161488292326599, 4.169662569479327, 4.177836846632054, 4.186011123784782, 4.19418540093751, 4.202359678090239, 4.210533955242966, 4.218708232395694, 4.226882509548422, 4.235056786701151, 4.243231063853878, 4.251405341006606, 4.259579618159334, 4.267753895312062, 4.27592817246479, 4.284102449617518, 4.292276726770247, 4.300451003922975, 4.308625281075702, 4.31679955822843, 4.324973835381158, 4.333148112533886, 4.341322389686614, 4.349496666839342, 4.35767094399207, 4.365845221144799, 4.3740194982975265, 4.382193775450254, 4.390368052602982, 4.39854232975571, 4.4067166069084385, 4.414890884061166, 4.423065161213894, 4.431239438366622, 4.4394137155193505, 4.447587992672078, 4.455762269824806, 4.463936546977534, 4.472110824130262, 4.48028510128299, 4.488459378435718, 4.496633655588447, 4.5048079327411745, 4.512982209893902, 4.52115648704663, 4.529330764199358, 4.537505041352086, 4.545679318504814, 4.553853595657542, 4.56202787281027, 4.570202149962999, 4.578376427115726, 4.586550704268454, 4.594724981421182, 4.60289925857391, 4.611073535726638, 4.619247812879366, 4.627422090032094, 4.635596367184823, 4.64377064433755, 4.651944921490278, 4.660119198643006, 4.668293475795734, 4.6764677529484615, 4.68464203010119, 4.692816307253918, 4.700990584406646, 4.709164861559374, 4.717339138712102, 4.72551341586483, 4.733687693017558, 4.7418619701702855, 4.750036247323014, 4.758210524475742, 4.76638480162847, 4.7745590787811985, 4.782733355933926, 4.790907633086654, 4.799081910239382, 4.80725618739211, 4.815430464544838, 4.823604741697566, 4.831779018850295, 4.8399532960030225, 4.84812757315575, 4.856301850308478, 4.864476127461206, 4.872650404613934, 4.880824681766661, 4.88899895891939, 4.897173236072118, 4.9053475132248465, 4.913521790377574, 4.921696067530302, 4.92987034468303, 4.938044621835758, 4.946218898988485, 4.954393176141213, 4.962567453293942, 4.970741730446671, 4.978916007599398, 4.987090284752126, 4.995264561904854, 5.003438839057582, 5.0116131162103095, 5.019787393363037, 5.027961670515766, 5.036135947668494, 5.044310224821222, 5.05248450197395, 5.060658779126678, 5.068833056279406, 5.0770073334321335, 5.085181610584862, 5.093355887737589, 5.101530164890318, 5.1097044420430455, 5.117878719195774, 5.126052996348502, 5.13422727350123, 5.1424015506539575, 5.150575827806685, 5.158750104959414, 5.166924382112143, 5.17509865926487, 5.183272936417598, 5.191447213570326, 5.199621490723054, 5.207795767875782, 5.215970045028509, 5.224144322181238, 5.232318599333966, 5.2404928764866945, 5.248667153639422, 5.25684143079215, 5.265015707944878, 5.273189985097606, 5.281364262250333, 5.289538539403061, 5.29771281655579, 5.305887093708518, 5.314061370861246, 5.322235648013974, 5.330409925166702, 5.33858420231943, 5.346758479472157, 5.354932756624885, 5.363107033777614, 5.371281310930342, 5.37945558808307, 5.387629865235798, 5.395804142388526, 5.403978419541254, 5.4121526966939815, 5.420326973846709, 5.428501250999437, 5.436675528152166, 5.4448498053048935, 5.453024082457622, 5.46119835961035, 5.469372636763078, 5.4775469139158055, 5.485721191068533, 5.493895468221261, 5.502069745373989, 5.5102440225267175, 5.518418299679446, 5.526592576832174, 5.534766853984902, 5.5429411311376295, 5.551115408290357, 5.559289685443086, 5.567463962595814, 5.575638239748542, 5.583812516901269, 5.591986794053998, 5.600161071206726, 5.608335348359454, 5.616509625512181, 5.624683902664909, 5.632858179817638, 5.641032456970366, 5.649206734123094, 5.657381011275822, 5.66555528842855, 5.673729565581278, 5.681903842734005, 5.690078119886733, 5.698252397039461, 5.70642667419219, 5.714600951344918, 5.722775228497646, 5.730949505650374, 5.739123782803102, 5.747298059955829, 5.755472337108557, 5.763646614261285, 5.771820891414014, 5.7799951685667414, 5.78816944571947, 5.796343722872198, 5.804518000024926, 5.8126922771776535, 5.820866554330381, 5.829040831483109, 5.837215108635837, 5.8453893857885655, 5.853563662941294, 5.861737940094022, 5.86991221724675, 5.8780864943994775, 5.886260771552205, 5.894435048704933, 5.902609325857661, 5.9107836030103895, 5.918957880163117, 5.927132157315846, 5.935306434468574, 5.9434807116213015, 5.951654988774029, 5.959829265926757, 5.968003543079486, 5.976177820232213, 5.984352097384941, 5.992526374537669, 6.000700651690398, 6.008874928843126, 6.017049205995853, 6.025223483148581, 6.033397760301309, 6.041572037454038, 6.049746314606766, 6.057920591759493, 6.066094868912222, 6.07426914606495, 6.082443423217677, 6.090617700370405, 6.098791977523133, 6.106966254675862, 6.115140531828589, 6.123314808981318, 6.131489086134046, 6.139663363286774, 6.147837640439501, 6.156011917592229, 6.164186194744957, 6.172360471897685, 6.1805347490504134, 6.188709026203141, 6.19688330335587, 6.205057580508598, 6.2132318576613255, 6.221406134814053, 6.229580411966781, 6.237754689119509, 6.245928966272237, 6.254103243424965, 6.262277520577694, 6.270451797730422, 6.2786260748831495, 6.286800352035877, 6.294974629188605, 6.303148906341333, 6.311323183494061, 6.319497460646789, 6.327671737799517, 6.335846014952246, 6.3440202921049735, 6.352194569257701, 6.360368846410429, 6.368543123563157, 6.376717400715885, 6.3848916778686124, 6.393065955021341, 6.40124023217407, 6.409414509326798, 6.417588786479525, 6.425763063632253, 6.433937340784981, 6.442111617937709, 6.450285895090437, 6.458460172243165, 6.466634449395893, 6.474808726548622, 6.482983003701349, 6.491157280854077, 6.499331558006805, 6.507505835159533, 6.515680112312261, 6.523854389464989, 6.532028666617718, 6.540202943770445, 6.548377220923173, 6.556551498075901, 6.564725775228629, 6.572900052381357, 6.5810743295340846, 6.589248606686813, 6.597422883839542, 6.60559716099227, 6.6137714381449975, 6.621945715297725, 6.630119992450453, 6.638294269603181, 6.646468546755909, 6.654642823908636, 6.662817101061366, 6.670991378214094, 6.6791656553668215, 6.687339932519549, 6.695514209672277, 6.703688486825005, 6.711862763977733])
+              .range(['#fff5f0ff', '#fff5f0ff', '#fff4efff', '#fff4efff', '#fff4eeff', '#fff4eeff', '#fff3edff', '#fff3edff', '#fff2ecff', '#fff2ecff', '#fff2ebff', '#fff2ebff', '#fff1eaff', '#fff1eaff', '#fff0e9ff', '#fff0e9ff', '#fff0e8ff', '#fff0e8ff', '#ffefe8ff', '#ffefe8ff', '#ffeee7ff', '#ffeee7ff', '#ffeee6ff', '#ffeee6ff', '#ffede5ff', '#ffede5ff', '#ffece4ff', '#ffece4ff', '#ffece3ff', '#ffece3ff', '#ffebe2ff', '#ffebe2ff', '#feeae1ff', '#feeae1ff', '#feeae0ff', '#feeadfff', '#fee9dfff', '#fee9deff', '#fee8deff', '#fee8ddff', '#fee8ddff', '#fee7dcff', '#fee7dcff', '#fee7dbff', '#fee7dbff', '#fee6daff', '#fee6daff', '#fee5d9ff', '#fee5d9ff', '#fee5d8ff', '#fee5d8ff', '#fee4d8ff', '#fee4d8ff', '#fee3d7ff', '#fee3d7ff', '#fee3d6ff', '#fee3d6ff', '#fee2d5ff', '#fee2d5ff', '#fee1d4ff', '#fee1d4ff', '#fee1d3ff', '#fee1d3ff', '#fee0d2ff', '#fee0d1ff', '#fedfd0ff', '#fedfd0ff', '#fedecfff', '#feddceff', '#fedccdff', '#fedccdff', '#fedbccff', '#fedbcbff', '#fedacaff', '#fedac9ff', '#fed9c9ff', '#fed9c8ff', '#fed8c7ff', '#fed7c6ff', '#fdd7c6ff', '#fdd6c5ff', '#fdd5c3ff', '#fdd4c2ff', '#fdd4c2ff', '#fdd3c1ff', '#fdd3c0ff', '#fdd2bfff', '#fdd2bfff', '#fdd1beff', '#fdd1bdff', '#fdd0bcff', '#fdcfbcff', '#fdcebbff', '#fdcebaff', '#fdcdb9ff', '#fdcdb9ff', '#fdccb8ff', '#fdccb7ff', '#fdcbb6ff', '#fdcbb6ff', '#fdcab5ff', '#fdcab4ff', '#fdc9b3ff', '#fdc8b3ff', '#fdc7b2ff', '#fdc7b1ff', '#fdc6b0ff', '#fdc6afff', '#fdc5aeff', '#fdc5adff', '#fcc4adff', '#fcc4acff', '#fcc3abff', '#fcc3aaff', '#fcc2aaff', '#fcc1a9ff', '#fcc1a8ff', '#fcc0a7ff', '#fcbfa7ff', '#fcbea6ff', '#fcbea5ff', '#fcbda4ff', '#fcbda3ff', '#fcbca2ff', '#fcbca2ff', '#fcbba1ff', '#fcbaa0ff', '#fcb99fff', '#fcb99fff', '#fcb89eff', '#fcb89dff', '#fcb79cff', '#fcb79cff', '#fcb69bff', '#fcb59aff', '#fcb499ff', '#fcb499ff', '#fcb398ff', '#fcb397ff', '#fcb296ff', '#fcb196ff', '#fcb095ff', '#fcb094ff', '#fcaf93ff', '#fcaf92ff', '#fcae92ff', '#fcae91ff', '#fcad90ff', '#fcac8fff', '#fcab8fff', '#fcab8eff', '#fcaa8dff', '#fca98cff', '#fca98cff', '#fca88bff', '#fca78bff', '#fca68aff', '#fca689ff', '#fca588ff', '#fca588ff', '#fca487ff', '#fca486ff', '#fca385ff', '#fca284ff', '#fca183ff', '#fca183ff', '#fca082ff', '#fc9f81ff', '#fc9e80ff', '#fc9e80ff', '#fc9d7fff', '#fc9d7eff', '#fc9c7dff', '#fc9c7dff', '#fc9b7cff', '#fc9a7bff', '#fc997aff', '#fc997aff', '#fc9879ff', '#fc9878ff', '#fc9777ff', '#fc9676ff', '#fc9576ff', '#fc9575ff', '#fc9474ff', '#fc9473ff', '#fc9373ff', '#fc9372ff', '#fc9272ff', '#fc9171ff', '#fc9070ff', '#fc8f6fff', '#fc8f6fff', '#fc8e6eff', '#fc8e6eff', '#fc8d6dff', '#fc8d6dff', '#fc8c6cff', '#fc8b6bff', '#fc8a6aff', '#fc8a6aff', '#fc8969ff', '#fc8968ff', '#fc8867ff', '#fc8767ff', '#fc8666ff', '#fc8666ff', '#fc8565ff', '#fc8565ff', '#fc8464ff', '#fc8363ff', '#fc8262ff', '#fc8262ff', '#fc8161ff', '#fc8161ff', '#fc8060ff', '#fc805fff', '#fc7f5fff', '#fc7e5eff', '#fc7d5dff', '#fb7d5cff', '#fb7c5cff', '#fb7c5bff', '#fb7b5bff', '#fb7b5aff', '#fb7a5aff', '#fb7959ff', '#fb7858ff', '#fb7757ff', '#fb7757ff', '#fb7656ff', '#fb7656ff', '#fb7555ff', '#fb7555ff', '#fb7454ff', '#fb7353ff', '#fb7252ff', '#fb7252ff', '#fb7151ff', '#fb7151ff', '#fb7050ff', '#fb704fff', '#fb6f4eff', '#fb6e4eff', '#fb6d4dff', '#fb6d4dff', '#fb6c4cff', '#fb6c4cff', '#fb6b4bff', '#fb6a4bff', '#fb694aff', '#fb694aff', '#fb6849ff', '#fa6748ff', '#fa6648ff', '#fa6647ff', '#fa6547ff', '#fa6446ff', '#fa6346ff', '#f96345ff', '#f96245ff', '#f96144ff', '#f96044ff', '#f95f43ff', '#f95f43ff', '#f85e42ff', '#f85d42ff', '#f85c41ff', '#f85c41ff', '#f75b40ff', '#f75b40ff', '#f75a3fff', '#f7593fff', '#f7583eff', '#f6583eff', '#f6573dff', '#f6563dff', '#f6553cff', '#f6553cff', '#f6543bff', '#f5533bff', '#f5523aff', '#f5523aff', '#f5513aff', '#f4503aff', '#f44f39ff', '#f44f39ff', '#f44d38ff', '#f44d38ff', '#f44c37ff', '#f34b37ff', '#f34a36ff', '#f34a35ff', '#f34935ff', '#f34834ff', '#f34734ff', '#f24733ff', '#f24633ff', '#f24532ff', '#f24432ff', '#f14331ff', '#f14331ff', '#f14230ff', '#f14130ff', '#f1402fff', '#f1402fff', '#f03f2eff', '#f03f2eff', '#f03e2dff', '#f03d2dff', '#f03c2cff', '#f03c2cff', '#ef3b2cff', '#ee3a2cff', '#ee392bff', '#ed392bff', '#ed382bff', '#ec382bff', '#ec372aff', '#eb372aff', '#eb362aff', '#ea362aff', '#ea3529ff', '#e93529ff', '#e93429ff', '#e83429ff', '#e73328ff', '#e63328ff', '#e63228ff', '#e53128ff', '#e53027ff', '#e43027ff', '#e42f27ff', '#e32f27ff', '#e32e27ff', '#e22d26ff', '#e22d26ff', '#e12c26ff', '#e12c26ff', '#e02b25ff', '#df2b25ff', '#de2a25ff', '#de2a25ff', '#dd2924ff', '#dd2924ff', '#dc2824ff', '#dc2824ff', '#db2723ff', '#db2723ff', '#da2623ff', '#d92523ff', '#d92422ff', '#d82422ff', '#d82322ff', '#d72322ff', '#d72221ff', '#d52221ff', '#d52121ff', '#d42121ff', '#d42020ff', '#d32020ff', '#d31f20ff', '#d21f20ff', '#d21e1fff', '#d11e1fff', '#d11d1fff', '#d01d1fff', '#d01c1fff', '#cf1b1fff', '#cf1a1eff', '#ce1a1eff', '#cd191eff', '#cc181eff', '#cc181dff', '#cb181dff', '#cb181dff', '#ca181dff', '#ca181dff', '#c9171cff', '#c9171cff', '#c8171cff', '#c8171cff', '#c7171cff', '#c6171cff', '#c5161cff', '#c5161cff', '#c4161bff', '#c4161bff', '#c3161bff', '#c2161bff', '#c2161bff', '#c1161bff', '#c1151bff', '#c0151bff', '#bf151aff', '#be151aff', '#be151aff', '#bd151aff', '#bd141aff', '#bc141aff', '#bc141aff', '#bb141aff', '#ba1419ff', '#b91419ff', '#b91419ff', '#b81419ff', '#b81319ff', '#b71319ff', '#b71319ff', '#b61319ff', '#b61318ff', '#b51318ff', '#b41218ff', '#b31218ff', '#b31218ff', '#b21218ff', '#b21218ff', '#b11217ff', '#b11217ff', '#b01117ff', '#b01117ff', '#af1117ff', '#ae1117ff', '#ad1117ff', '#ad1117ff', '#ac1016ff', '#ab1016ff', '#ab1016ff', '#aa1016ff', '#aa1016ff', '#a91016ff', '#a91016ff', '#a81016ff', '#a80f15ff', '#a70f15ff', '#a60f15ff', '#a50f15ff', '#a50f15ff', '#a30f15ff', '#a20e15ff', '#a10e15ff', '#a00e14ff', '#9f0e14ff', '#9e0d14ff', '#9d0d14ff', '#9d0d14ff', '#9c0d14ff', '#9b0c14ff', '#9a0c14ff', '#990c13ff', '#980c13ff', '#970b13ff', '#960b13ff', '#950b13ff', '#940b13ff', '#930a13ff', '#920a13ff', '#910a12ff', '#900912ff', '#8f0912ff', '#8e0912ff', '#8d0912ff', '#8c0812ff', '#8b0812ff', '#8a0811ff', '#890811ff', '#880811ff', '#870811ff', '#860711ff', '#850711ff', '#840711ff', '#830711ff', '#820610ff', '#810610ff', '#800610ff', '#7f0610ff', '#7d0510ff', '#7c0510ff', '#7b0510ff', '#7a0510ff', '#7a040fff', '#79040fff', '#78040fff', '#77040fff', '#76030fff', '#75030fff', '#74030fff', '#73030fff', '#72020eff', '#71020eff', '#70020eff', '#6f020eff', '#6e010eff', '#6d010eff', '#6c010eff', '#6b010eff', '#6a000dff', '#69000dff', '#68000dff', '#67000dff']);
+    
+
+    color_map_6dff0ea6b17fc7e69b215d9cbb65c067.x = d3.scale.linear()
+              .domain([2.632898464766463, 6.711862763977733])
+              .range([0, 450 - 50]);
+
+    color_map_6dff0ea6b17fc7e69b215d9cbb65c067.legend = L.control({position: 'topright'});
+    color_map_6dff0ea6b17fc7e69b215d9cbb65c067.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_6dff0ea6b17fc7e69b215d9cbb65c067.legend.addTo(map_98fc6f95818c69bb968f73ea10516247);
+
+    color_map_6dff0ea6b17fc7e69b215d9cbb65c067.xAxis = d3.svg.axis()
+        .scale(color_map_6dff0ea6b17fc7e69b215d9cbb65c067.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([2.632898464766463, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 3.04879286390173, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 3.4646872630369967, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 3.880581662172263, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 4.29647606130753, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 4.712370460442797, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 5.1282648595780636, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 5.54415925871333, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 5.960053657848597, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 6.375948056983864, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
+
+    color_map_6dff0ea6b17fc7e69b215d9cbb65c067.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_6dff0ea6b17fc7e69b215d9cbb65c067.g = color_map_6dff0ea6b17fc7e69b215d9cbb65c067.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_6dff0ea6b17fc7e69b215d9cbb65c067.g.selectAll("rect")
+        .data(color_map_6dff0ea6b17fc7e69b215d9cbb65c067.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_6dff0ea6b17fc7e69b215d9cbb65c067.x(color_map_6dff0ea6b17fc7e69b215d9cbb65c067.color.domain()[i - 1]) : color_map_6dff0ea6b17fc7e69b215d9cbb65c067.x.range()[0],
+            x1: i < color_map_6dff0ea6b17fc7e69b215d9cbb65c067.color.domain().length ? color_map_6dff0ea6b17fc7e69b215d9cbb65c067.x(color_map_6dff0ea6b17fc7e69b215d9cbb65c067.color.domain()[i]) : color_map_6dff0ea6b17fc7e69b215d9cbb65c067.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_6dff0ea6b17fc7e69b215d9cbb65c067.g.call(color_map_6dff0ea6b17fc7e69b215d9cbb65c067.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("Meta_Prediction_Log");
+    
+            var marker_f3f969fcb2a588f453a65187f9756377 = L.marker(
+                [41.87936237811185, -87.60547733764369],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_5bd7feae5f0baa89e9ecffd02c6fa61d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e814\u003c/div\u003e"});
+            marker_f3f969fcb2a588f453a65187f9756377.setIcon(div_icon_5bd7feae5f0baa89e9ecffd02c6fa61d);
+        
+    
+            var marker_1a2d77b05e9bda88330e196aafff9bb5 = L.marker(
+                [41.98439615731396, -87.67196511772964],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_cc6cda7e119d64c92973a59a956197d2 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e20\u003c/div\u003e"});
+            marker_1a2d77b05e9bda88330e196aafff9bb5.setIcon(div_icon_cc6cda7e119d64c92973a59a956197d2);
+        
+    
+            var marker_c2abe1096f67da8f90d3cbfe3a799c18 = L.marker(
+                [41.88664592362364, -87.68549741305884],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_9bec18d7666a72c6c38b606f0eb22134 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e45\u003c/div\u003e"});
+            marker_c2abe1096f67da8f90d3cbfe3a799c18.setIcon(div_icon_9bec18d7666a72c6c38b606f0eb22134);
+        
+    
+            var marker_975e6f432c4326b19b99b9c612525261 = L.marker(
+                [41.998810292481245, -87.83237328937987],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_3d38a76ec14765f619bc2008cf15ea56 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e16\u003c/div\u003e"});
+            marker_975e6f432c4326b19b99b9c612525261.setIcon(div_icon_3d38a76ec14765f619bc2008cf15ea56);
+        
+    
+            var marker_85998e7e46b32a54f074f66ffe8e067b = L.marker(
+                [41.931869722392584, -87.63868477959751],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_03b5a22d54954016023154208f64c67b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e156\u003c/div\u003e"});
+            marker_85998e7e46b32a54f074f66ffe8e067b.setIcon(div_icon_03b5a22d54954016023154208f64c67b);
+        
+    
+            var marker_d21157199b87fc3ac1b606135dadf08d = L.marker(
+                [41.93912925313232, -87.71879452105406],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_530ba4ece28e78a5f3b60e90be61d7e9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e22\u003c/div\u003e"});
+            marker_d21157199b87fc3ac1b606135dadf08d.setIcon(div_icon_530ba4ece28e78a5f3b60e90be61d7e9);
+        
+    
+            var marker_16cd34ac8cb4622b09423ec732953990 = L.marker(
+                [42.00593237049313, -87.91259065666762],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_28184893bcf65b3ff6effcf536584d6a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e87\u003c/div\u003e"});
+            marker_16cd34ac8cb4622b09423ec732953990.setIcon(div_icon_28184893bcf65b3ff6effcf536584d6a);
+        
+    
+            var marker_3798a6e5fd005a2827fe63654523c14a = L.marker(
+                [41.796230823577915, -87.77883201603603],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_ad88b5940bef6ec3f9e5c807828a057a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e18\u003c/div\u003e"});
+            marker_3798a6e5fd005a2827fe63654523c14a.setIcon(div_icon_ad88b5940bef6ec3f9e5c807828a057a);
+        
+    
+            var marker_0223d7d59b629bf8610840d61f41fb22 = L.marker(
+                [41.8341816920705, -87.6522731309742],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_8d7eb7668a4db94c57d2c072bc763e3f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e18\u003c/div\u003e"});
+            marker_0223d7d59b629bf8610840d61f41fb22.setIcon(div_icon_8d7eb7668a4db94c57d2c072bc763e3f);
+        
+    
+            var marker_4c70f10890ee8222c8f207efe4c0d3de = L.marker(
+                [41.89387310746888, -87.76552677142368],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_c19217a6bb54fce2f72fa5d9ad6f62c4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e6\u003c/div\u003e"});
+            marker_4c70f10890ee8222c8f207efe4c0d3de.setIcon(div_icon_c19217a6bb54fce2f72fa5d9ad6f62c4);
+        
+    
+            var marker_2a6a94978a2fd4be505cc1bda2d992fc = L.marker(
+                [42.03694154911625, -87.70531856980286],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_a31c20b8c34696217e7f992d08667285 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e8\u003c/div\u003e"});
+            marker_2a6a94978a2fd4be505cc1bda2d992fc.setIcon(div_icon_a31c20b8c34696217e7f992d08667285);
+        
+    
+            var marker_a525ada47c5bd611dd6a2f1f0dce5f6e = L.marker(
+                [41.781736691495176, -87.61912145840931],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_8c0c32401556dadc50972e65355e4513 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e9\u003c/div\u003e"});
+            marker_a525ada47c5bd611dd6a2f1f0dce5f6e.setIcon(div_icon_8c0c32401556dadc50972e65355e4513);
+        
+    
+            var marker_2fb22cd2d4f29a9970a30df735b3156b = L.marker(
+                [41.94633228095543, -87.7989134358405],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_81cb0a183547b18c1796d5b33f30db99 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e9\u003c/div\u003e"});
+            marker_2fb22cd2d4f29a9970a30df735b3156b.setIcon(div_icon_81cb0a183547b18c1796d5b33f30db99);
+        
+    
+            var marker_7a212616b9dba2a61316954e37bb90af = L.marker(
+                [41.99163154705408, -87.75216467210369],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_d7252df9e28c74bc3b6cc75b2cfba63a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e9\u003c/div\u003e"});
+            marker_7a212616b9dba2a61316954e37bb90af.setIcon(div_icon_d7252df9e28c74bc3b6cc75b2cfba63a);
+        
+    
+            var marker_f4b5b9d9fde59c47b7e4d052b8704b09 = L.marker(
+                [41.78901180947283, -87.69897214160157],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_b15abb5dd5c9c4487417be291c7e1038 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e9\u003c/div\u003e"});
+            marker_f4b5b9d9fde59c47b7e4d052b8704b09.setIcon(div_icon_b15abb5dd5c9c4487417be291c7e1038);
+        
+    
+            var marker_a66673ec54f352e919b1caa9d998ffd5 = L.marker(
+                [41.77440549390837, -87.5392802750026],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_7e34900d3f9a9097bd4c7c1937cf54c3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e7\u003c/div\u003e"});
+            marker_a66673ec54f352e919b1caa9d998ffd5.setIcon(div_icon_7e34900d3f9a9097bd4c7c1937cf54c3);
+        
+    
+            var marker_004d4e36cca4a6e611ff356adbea46f6 = L.marker(
+                [41.953478782465915, -87.87904121215887],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_2313cabff0560fc668cdb5277afdf316 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e11\u003c/div\u003e"});
+            marker_004d4e36cca4a6e611ff356adbea46f6.setIcon(div_icon_2313cabff0560fc668cdb5277afdf316);
+        
+    
+            var marker_77ad6b6a41dc0dce20a4ee1682e13d0a = L.marker(
+                [41.841432905866434, -87.73221307885251],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_6fdf0f7ec1e1115f17e2ffbfc50685c4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e8\u003c/div\u003e"});
+            marker_77ad6b6a41dc0dce20a4ee1682e13d0a.setIcon(div_icon_6fdf0f7ec1e1115f17e2ffbfc50685c4);
+        
+    
+            var marker_bf831f089beab010d0a447f168ac8402 = L.marker(
+                [41.6842274630127, -87.63270767070021],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_f274bc64c8b403d80c1052a1fd892135 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e8\u003c/div\u003e"});
+            marker_bf831f089beab010d0a447f168ac8402.setIcon(div_icon_f274bc64c8b403d80c1052a1fd892135);
+        
+    
+            var marker_cac47954cbd3b01cf0553d6d60be2175 = L.marker(
+                [41.826874257710855, -87.5723425748625],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_22dad1a54b372a3ccf04e1fbc3297663 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e6\u003c/div\u003e"});
+            marker_cac47954cbd3b01cf0553d6d60be2175.setIcon(div_icon_22dad1a54b372a3ccf04e1fbc3297663);
+        
+    
+            var marker_1405e8dd284ba66e52927ae49f3ab310 = L.marker(
+                [41.73660995109311, -87.66580374389427],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_a234706505048848bc0a7a784b3b818f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e8\u003c/div\u003e"});
+            marker_1405e8dd284ba66e52927ae49f3ab310.setIcon(div_icon_a234706505048848bc0a7a784b3b818f);
+        
+    
+            var marker_f475c6d46ea0cafe66fd7a3265f9f015 = L.marker(
+                [41.72931105440004, -87.58604217972359],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_2a3fba7f658cf3c39476c9c7850948a3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e8\u003c/div\u003e"});
+            marker_f475c6d46ea0cafe66fd7a3265f9f015.setIcon(div_icon_2a3fba7f658cf3c39476c9c7850948a3);
+        
+    
+            var marker_7434c32fbcf3467de31ae245f6d200c4 = L.marker(
+                [41.7438528844343, -87.74557460761045],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_d19bf1f3f3868c81b8f259d33cf36e35 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e8\u003c/div\u003e"});
+            marker_7434c32fbcf3467de31ae245f6d200c4.setIcon(div_icon_d19bf1f3f3868c81b8f259d33cf36e35);
+        
+    
+            var marker_4acedc4630cba3f9f8d919b387e4d668 = L.marker(
+                [41.63186447699787, -87.59968370773277],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_f5f937a0f457fbbd758c1487b72b37fe = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e10\u003c/div\u003e"});
+            marker_4acedc4630cba3f9f8d919b387e4d668.setIcon(div_icon_f5f937a0f457fbbd758c1487b72b37fe);
+        
+    
+            var marker_e4c366fc39d33b72b6495d4df20644a2 = L.marker(
+                [41.67690491276775, -87.55303508002419],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_ea1a0bd9c3a1ab89762e5eb944b8fd83 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e12\u003c/div\u003e"});
+            marker_e4c366fc39d33b72b6495d4df20644a2.setIcon(div_icon_ea1a0bd9c3a1ab89762e5eb944b8fd83);
+        
+    
+            var marker_c4cd267647d6a78df839bb619ebda479 = L.marker(
+                [41.69149419027854, -87.71238966843332],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_124bb26f85ef052f4e5a0a4c8e99e136 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e6\u003c/div\u003e"});
+            marker_c4cd267647d6a78df839bb619ebda479.setIcon(div_icon_124bb26f85ef052f4e5a0a4c8e99e136);
+        
+    
+            var marker_d582ecb014a9c3e57e1f4fc4b03f24cb = L.marker(
+                [41.72195621890308, -87.50629022256449],
+                {}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+    
+            var div_icon_e2280f19fd15557b94b4befe82830eb5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black\"\u003e13\u003c/div\u003e"});
+            marker_d582ecb014a9c3e57e1f4fc4b03f24cb.setIcon(div_icon_e2280f19fd15557b94b4befe82830eb5);
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": false, "position": "topleft", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
+            ).addTo(map_98fc6f95818c69bb968f73ea10516247);
+        
+</script>
+</html>
