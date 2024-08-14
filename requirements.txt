@@ -1,0 +1,12 @@
+h3==3.7.7
+numpy>=1.23.5, <2.0.0
+tensorflow>=2.17.0
+pandas>=2.2.2
+matplotlib>=3.9.2
+scikit-learn>=1.5.1
+seaborn>=0.13.2
+shapely>=2.0.5
+folium>=0.17.0
+geopandas>=1.0.1
+geoplot==0.5.1
+gym>=0.26.2
