@@ -18,9 +18,9 @@ Please ensure you have Python installed.
       https://datahub.cmap.illinois.gov/datasets/ef5f2092556c409d94d119bd821ec6da_2/explore?filter s=eyJGSVJTVF9DT1VOVFkiOlsiMDMxIl19&location=41.827915%2C-  88.109641%2C8.95
 
 3. Rename the files.
-   
-  1. Taxi Trip Dataset: taxi_main copy.csv
-  2. Land Use Dataset: land_use.geojson
+
+   1. Taxi Trip Dataset: taxi_main copy.csv
+   2. Land Use Dataset: land_use.geojson
 
 4. Add these files to the "data" folder.
 
