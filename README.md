@@ -11,7 +11,7 @@ Please ensure you have Python installed.
 
 2. Download the following files as they could not be added to the repository due to their size:
    
-   1. The taxi trip dataset for 2019.  the notebook called 01_01_data.cleaning.ipynb. It is not used in any other notebooks. You can retrieve the data here:
+   1. The taxi trip dataset for 2019. You can retrieve the data here:
       https://data.cityofchicago.org/Transportation/Taxi-Trips-2019/h4cq-z3dy/data .
       The filter for the 2019 timeframe should already be pre-selected.
    2. The land use data from the city of Chicago.You can retrieve the data here:
